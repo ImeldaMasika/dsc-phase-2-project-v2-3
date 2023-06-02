@@ -1,56 +1,56 @@
-Overview
-This project uses housing data in King County to build a linear regression model to predict the price of houses based on certain features about the house. The model will be used by Gu's Construction company to determine what types of houses they want to build.
+## Project Overview
 
-The Data
-This project strictly used the King County House Sales dataset, and used to following features:
+This project focuses on XYZ Real Estate Agency, situated in a vibrant northwestern county, and aims to analyze key factors influencing house prices in the area. By developing a robust multiple linear regression model, the agency can determine optimal pricing strategies and enhance their annual sales. The project utilizes data-driven strategies and analytical insights to reimagine real estate and transcend conventional boundaries.
 
-bedrooms
-bathrooms
-sqft_living
-sqft_lot
-view
-waterfront
-zipcode
-basement
-sqft_living15
-sqft_lot15
-Analysis
-To get the most accurate model, I made the following adjustments to the data:
+### Business Problem
 
-Remove outliers
-Log transform
-One hot encode categorical variables
-Min-max scale continuous variables
-Remove features with insignificant p-values
-Check for interactions between variables
-Conclusion
-Zipcodes most highly correlated with price:
+XYZ Real Estate Agency needs assistance in identifying the crucial factors that impact house prices. The agency seeks to leverage this information to guide their pricing strategies and increase their annual sales. The project's main objective is to develop a reliable model that accurately predicts housing prices and provides valuable insights to enhance decision-making.
 
--98039
+### Project Objectives
 
--98004
+- Identify the significant features that influence house prices in the northwestern county.
+- Develop an optimal pricing strategy using a robust multiple linear regression model.
+- Identify overpriced or underpriced houses by comparing predicted and actual prices.
+- Improve the agency's annual revenue by leveraging analytical insights and the developed pricing strategy.
 
--98112
+### Data Description Report
 
--98109
+The dataset used in this project consists of 21 columns and 21,597 rows, encompassing various data types such as float, integer, and object. Some columns contain missing values, which were handled by dropping the corresponding rows. Data cleaning procedures included converting data types and creating a subset of features for analysis. Exploratory data analysis techniques, including univariate and bivariate analysis, were applied to gain insights into the dataset's characteristics.
 
--98102
+### Exploratory Data Analysis
 
-Features most highly correlated with price:
+Univariate analysis involved examining the distribution and characteristics of individual variables, while bivariate analysis focused on exploring relationships between variables. Scatter plots and bar plots were utilized to visualize the correlation between numerical and categorical variables with the house prices. Multivariate analysis incorporated a heatmap to display the correlation between all columns in the dataset.
 
--sqft_living
+### Model Development
 
--waterfront
+Four models were developed during the project. The baseline model, utilizing a simple linear regression, established the initial understanding of the relationship between the square footage of living space and house prices. The final model, a multiple linear regression, incorporated additional features to improve the predictive power. Evaluation metrics such as R-squared and F-statistic were used to assess the model's performance and significance.
 
--sqft_living15
+### Conclusion
 
-Features with negative correlation with price:
+The multiple linear regression model successfully identified key factors influencing house prices in the northwestern county, achieving an adjusted R-squared value of 0.835. Features such as square footage, waterfront location, property grade, and specific zip codes were found to significantly impact house prices. The model's findings and the developed pricing strategy can assist XYZ Real Estate Agency in making informed pricing decisions and maximizing sales potential.
 
--bedrooms
+### Recommendation
 
--floors
+Based on the analysis conducted, the following recommendations are proposed:
 
--basement
+1. Focus on key features: Pay close attention to features such as square footage, waterfront location, property grade, and specific zip codes, as they significantly influence house prices in the area.
 
-Next Steps
-For further investigation, I will do cost benefit analysis for all the features. For example, homes in zipcode 98039 sell for the highest price, but buying land in that area could also be more expensive, thus reducing the net benefit of building a house there.
+2. Optimize pricing strategy: Utilize the developed multiple linear regression model to create an optimal pricing strategy. Consider the coefficients obtained from the model to set competitive and attractive prices for listed properties.
+
+3. Identify overpriced and underpriced houses: Regularly compare predicted prices from the model with actual prices to identify overpriced or underpriced properties. Make necessary adjustments to pricing to maximize sales potential.
+
+4. Leverage analytical insights: Incorporate the analytical insights derived from this research into decision-making processes to gain a competitive advantage, attract more buyers, and increase overall sales volume.
+
+### Next Steps
+
+To further enhance the project, the following steps are recommended:
+
+1. Incorporate temporal dynamics: Analyze how the housing market changes over time by considering seasonal trends, price fluctuations, and long-term market dynamics using time series analysis techniques.
+
+2. Collaborate with domain experts: Engage in discussions
+
+ and collaborations with real estate experts or domain specialists to gain deeper insights into the market and validate the analysis conducted.
+
+3. Refine the model: Explore other regression techniques, address issues such as multicollinearity, overfitting, and underfitting to improve the accuracy and predictive power of the model.
+
+4. Stay updated and iterate: Continuously update the model with new data and monitor industry trends to ensure its accuracy and relevance in the evolving real estate market.
